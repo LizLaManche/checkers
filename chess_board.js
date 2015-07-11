@@ -9,11 +9,7 @@ var BLOCK_COLOUR_1 = '#e81d02',
 var piecePositions = null;
 
 var PIECE_PAWN = 0,
-	PIECE_CASTLE = 1,
-	PIECE_ROUKE = 2,
-	PIECE_BISHOP = 3,
-	PIECE_QUEEN = 4,
-	PIECE_KING = 5,
+	PIECE_KING = 1,
 	IN_PLAY = 0,
 	TAKEN = 1,
 	pieces = null,
@@ -95,30 +91,6 @@ function canSelectedMoveToBlock(selectedPiece, clickedBlock, enemyPiece) {
 	case PIECE_PAWN:
 
 		bCanMove = canPawnMoveToBlock(selectedPiece, clickedBlock, enemyPiece);
-
-		break;
-
-	case PIECE_CASTLE:
-
-		// TODO
-
-		break;
-
-	case PIECE_ROUKE:
-
-		// TODO
-
-		break;
-
-	case PIECE_BISHOP:
-
-		// TODO
-
-		break;
-
-	case PIECE_QUEEN:
-
-		// TODO
 
 		break;
 
